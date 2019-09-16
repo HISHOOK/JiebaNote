@@ -46,7 +46,7 @@ re_han_default = re.compile("(.+)", re.U)  # 此处做了更改，可以支持�
 
 re_skip_default = re.compile("(\r\n|\s)", re.U)
 
-re_han_cut_all = re.compile("([\u4E00-\u9FD5]+)", re.U)  # 匹配中文字符
+re_han_cut_all = re.compile("([\u4E00-\u9FD5]+)", re.U)  # 中文编码范围（包含基本汉字20902字、基本补充汉字48字）
 
 re_skip_cut_all = re.compile("[^a-zA-Z0-9+#\n]", re.U)
 
